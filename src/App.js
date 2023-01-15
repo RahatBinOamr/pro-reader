@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+import router from "./Router/Router";
+
 
 function App() {
-  return <h1> Welcome to proReader</h1>
+  
+  return (
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
-export default App
+export default App;
